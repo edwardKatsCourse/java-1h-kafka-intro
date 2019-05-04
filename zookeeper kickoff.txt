@@ -1,0 +1,20 @@
+Zookeeper start
+folders:
+- conf
+- bin
+
+1. conf/zoo_sample.cfg
+- copy/paste with name zoo.cfg
+- REMOVE ALL LINES STARTINGS WITH #
+- dataDir -> replace with my own folder
+zookeeper will dump all info from kafka to this folder
+
+2. Start zookeeper server
+- Set JAVA_HOME env variable (Win: https://javatutorial.net/set-java-home-windows-10 | MacOS: https://www.youtube.com/watch?v=H4wgubSwfDc)
+- open terminal in zookeeper folder
+- print "bin\zkServer.cmd" (MacOS: bin\zkServer.sh)
+Note: zkServer will search for zoo.cfg in config folder. 
+If your config elsewhere - specify as a param (zkServer my\path\to\config)
+
+Full tutorial cna be found here
+https://kafka.apache.org/quickstart
