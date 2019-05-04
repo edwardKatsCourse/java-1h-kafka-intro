@@ -12,9 +12,18 @@ zookeeper will dump all info from kafka to this folder
 2. Start zookeeper server
 - Set JAVA_HOME env variable (Win: https://javatutorial.net/set-java-home-windows-10 | MacOS: https://www.youtube.com/watch?v=H4wgubSwfDc)
 - open terminal in zookeeper folder
-- print "bin\zkServer.cmd" (MacOS: bin\zkServer.sh)
+
+Windows:
+print "bin\zkServer.cmd" 
+
+MacOS:
+- bin/zkServer.sh start (запуск сервера)
+- bin/zkServer.sh stop (выключение сервера)
+
 Note: zkServer will search for zoo.cfg in config folder. 
 If your config elsewhere - specify as a param (zkServer my\path\to\config)
+
+
 
 Full tutorial cna be found here
 https://kafka.apache.org/quickstart
